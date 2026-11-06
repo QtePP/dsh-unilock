@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "id": "io.github.dsh-unilock.all",
+  "generatedBy": "dsh-pack/0.1.0",
+  "units": [
+    {
+      "id": "io.github.dsh-unilock.command",
+      "version": "1.0.0",
+      "digest": "e48c7f526bea3470fce7075fc4b338ac16d5ddee6302349e9cd4fb0c8ea3f687",
+      "unitDigest": "b778a6b2679933d244cd472bede2eeedb23b59100387d58b7b7a08214bdedb59"
+    },
+    {
+      "id": "io.github.dsh-unilock.cli",
+      "version": "1.0.0",
+      "digest": "fa3ca99438c1d0c13f9e53aaecd087eadb418259875cacc17c6a02ad73c59016",
+      "unitDigest": "1dfd16ee17e92d47fb84dffdd1576abbe14e18c4f388c6c2dfb8fc472a5fef68"
+    },
+    {
+      "id": "io.github.dsh-unilock.skill",
+      "version": "1.0.0",
+      "digest": "7441b0f4329aaec93dcb7285e1678d5f0642cd1aa519abdc22c40ac9bfa554fe",
+      "unitDigest": "d3a5cc700dcd13d21c083eb3a6c010df8602acbc6c027dbd1e63ad3c29aba5bc"
+    },
+    {
+      "id": "io.github.dsh-unilock.tool",
+      "version": "1.0.0",
+      "digest": "b999cd7af25042827f1337cb97a21f5dd1009334e5b86587c28932842809e4b2",
+      "unitDigest": "3d9e443bf9677f3311e17b98dbbd31dbf8c065e8e7a81a9aac9adf6f02bd56cd"
+    },
+    {
+      "id": "io.github.dsh-unilock.mcp",
+      "version": "1.0.0",
+      "digest": "e2d0c1011ce05df57bb7d887ceebdbe4ed5598ecd395727b6f07a04f7b517a11",
+      "unitDigest": "68080f671535a38401838554609caaf81c9b23033ea69c69a705f0a362e821c2"
+    }
+  ],
+  "patches": [
+    {
+      "id": "base",
+      "file": "patches/00-base.patch.yml",
+      "digest": "8bb80805c39af6dbe0b41507ceb88a2828fc0c7ec170e8ede371548cd3d28536"
+    },
+    {
+      "id": "command",
+      "file": "patches/10-command.patch.yml",
+      "digest": "49d7e3fef1d1cb1ed07f6ec2fe1f4ada900a74ea8c42101f98c45b3f70f3726c"
+    },
+    {
+      "id": "cli",
+      "file": "patches/20-cli.patch.yml",
+      "digest": "503ca7f657e880ab74aa8e18e64363b9db0f6741f45982896d375ff0af4a1200"
+    },
+    {
+      "id": "skill",
+      "file": "patches/30-skill.patch.yml",
+      "digest": "0dfd023cd2f794797865c7d88553ca385f1da37c97e9c6e9a67e75d4171f5537"
+    },
+    {
+      "id": "tool",
+      "file": "patches/40-tool.patch.yml",
+      "digest": "36f53e1b593e6c1efa34dd066aebdd1033161d4a8cc2a73fd1240fb773fde160"
+    },
+    {
+      "id": "mcp",
+      "file": "patches/50-mcp.patch.yml",
+      "digest": "a6575454f5d736d41228c80f7d7d314aeb675a3ba3440fdfef8d40a40c0bdfad"
+    }
+  ],
+  "bindings": {},
+  "credentialBindings": {},
+  "digest": "08cae0b53943b06c8ef1a1821cf8fe60eeef91939df1bed33da675f6720bdb49"
+}

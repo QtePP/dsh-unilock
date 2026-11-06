@@ -1,0 +1,40 @@
+{
+  "format": 1,
+  "id": "io.github.dsh-unilock.cli",
+  "name": "unilock CLI",
+  "version": "1.0.0",
+  "description": "Ships one standalone executable script. Runs outside the agent loop; no model, no ctx, no other unit.",
+  "roles": [
+    "cli"
+  ],
+  "provides": {
+    "capabilities": [
+      "unilock.cli"
+    ],
+    "services": [],
+    "tools": [],
+    "commands": []
+  },
+  "requires": {
+    "capabilities": [],
+    "credentials": [],
+    "constraints": {}
+  },
+  "contents": {
+    "sources": [
+      {
+        "kind": "directory",
+        "path": "bin",
+        "target": "bin",
+        "role": "cli"
+      }
+    ],
+    "skills": [],
+    "commands": [],
+    "mcpServers": []
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "digest": "fa3ca99438c1d0c13f9e53aaecd087eadb418259875cacc17c6a02ad73c59016"
+  }
+}

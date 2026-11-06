@@ -1,0 +1,19 @@
+{
+  "format": 1,
+  "id": "com.example.team-pack",
+  "description": "Team capability pack: replace this description and the example units.",
+  "profile": {
+    "name": "team",
+    "bundles": ["@deepseek-ai/dsh-base", "@deepseek-ai/dsh-web-app"]
+  },
+  "units": [
+    { "id": "com.example.search", "version": "1.0.0" },
+    { "id": "com.example.review-workflow", "version": "1.0.0" }
+  ],
+  "patches": [
+    { "id": "team-base", "file": "patches/00-base.patch.yml", "description": "Baseline rows shared by every team workflow." },
+    { "id": "team-mcp", "file": "patches/10-mcp.patch.yml", "description": "MCP server rows; keys are declared, values stay local." }
+  ],
+  "bindings": {},
+  "credentialBindings": {}
+}

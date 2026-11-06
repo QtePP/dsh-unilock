@@ -1,0 +1,20 @@
+{
+  "format": 1,
+  "id": "io.github.dsh-unilock.minimal",
+  "description": "Only skill + tool. Same unit files as the other compositions; no unit was edited to make this subset work.",
+  "profile": {
+    "name": "unilock-minimal",
+    "bundles": ["@deepseek-ai/dsh-base"]
+  },
+  "units": [
+    { "id": "io.github.dsh-unilock.skill", "version": "1.0.0" },
+    { "id": "io.github.dsh-unilock.tool", "version": "1.0.0" }
+  ],
+  "patches": [
+    { "id": "base", "file": "patches/00-base.patch.yml", "description": "Baseline rows." },
+    { "id": "skill", "file": "patches/30-skill.patch.yml", "description": "Skill discovery." },
+    { "id": "tool", "file": "patches/40-tool.patch.yml", "description": "Tool registration." }
+  ],
+  "bindings": {},
+  "credentialBindings": {}
+}

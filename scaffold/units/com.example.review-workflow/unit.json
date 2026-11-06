@@ -1,0 +1,28 @@
+{
+  "format": 1,
+  "id": "com.example.review-workflow",
+  "name": "Review workflow",
+  "version": "1.0.0",
+  "description": "Declares a review command that consumes search.web without binding to a concrete provider.",
+  "roles": ["command"],
+  "provides": {
+    "capabilities": ["workflow.review"],
+    "services": [],
+    "tools": [],
+    "commands": ["review"]
+  },
+  "requires": {
+    "capabilities": ["search.web"],
+    "credentials": [],
+    "constraints": { "search.web": "^1.0.0" }
+  },
+  "contents": {
+    "sources": [
+      { "kind": "directory", "path": "commands", "target": "commands", "role": "command" }
+    ],
+    "skills": [],
+    "commands": ["review"],
+    "mcpServers": []
+  },
+  "integrity": { "algorithm": "sha256", "digest": "COMPUTE_ME" }
+}

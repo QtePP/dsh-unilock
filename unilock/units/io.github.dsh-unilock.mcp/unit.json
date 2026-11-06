@@ -1,0 +1,48 @@
+{
+  "format": 1,
+  "id": "io.github.dsh-unilock.mcp",
+  "name": "unilock MCP server",
+  "version": "1.0.0",
+  "description": "Ships one MCP server config template and declares the credential name it needs. Values stay local; no tool or skill code.",
+  "roles": [
+    "mcp"
+  ],
+  "provides": {
+    "capabilities": [
+      "unilock.mcp"
+    ],
+    "services": [],
+    "tools": [],
+    "commands": []
+  },
+  "requires": {
+    "capabilities": [],
+    "credentials": [
+      {
+        "name": "UNILOCK_MCP_TOKEN",
+        "description": "Token for the unilock MCP endpoint; supply locally, never commit.",
+        "optional": false
+      }
+    ],
+    "constraints": {}
+  },
+  "contents": {
+    "sources": [
+      {
+        "kind": "directory",
+        "path": "mcp",
+        "target": "mcp",
+        "role": "mcp"
+      }
+    ],
+    "skills": [],
+    "commands": [],
+    "mcpServers": [
+      "unilock"
+    ]
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "digest": "e2d0c1011ce05df57bb7d887ceebdbe4ed5598ecd395727b6f07a04f7b517a11"
+  }
+}

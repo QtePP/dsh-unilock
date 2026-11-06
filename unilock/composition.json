@@ -1,0 +1,26 @@
+{
+  "format": 1,
+  "id": "io.github.dsh-unilock.all",
+  "description": "All five independent units. No unit imports another; capabilities are resolved by the composition.",
+  "profile": {
+    "name": "unilock-all",
+    "bundles": ["@deepseek-ai/dsh-base", "@deepseek-ai/dsh-web-app"]
+  },
+  "units": [
+    { "id": "io.github.dsh-unilock.command", "version": "1.0.0" },
+    { "id": "io.github.dsh-unilock.cli", "version": "1.0.0" },
+    { "id": "io.github.dsh-unilock.skill", "version": "1.0.0" },
+    { "id": "io.github.dsh-unilock.tool", "version": "1.0.0" },
+    { "id": "io.github.dsh-unilock.mcp", "version": "1.0.0" }
+  ],
+  "patches": [
+    { "id": "base", "file": "patches/00-base.patch.yml", "description": "Baseline rows." },
+    { "id": "command", "file": "patches/10-command.patch.yml", "description": "Command plane." },
+    { "id": "cli", "file": "patches/20-cli.patch.yml", "description": "Standalone CLI." },
+    { "id": "skill", "file": "patches/30-skill.patch.yml", "description": "Skill discovery." },
+    { "id": "tool", "file": "patches/40-tool.patch.yml", "description": "Tool registration." },
+    { "id": "mcp", "file": "patches/50-mcp.patch.yml", "description": "MCP connection." }
+  ],
+  "bindings": {},
+  "credentialBindings": {}
+}

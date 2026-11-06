@@ -1,0 +1,39 @@
+{
+  "format": 1,
+  "id": "io.github.dsh-unilock.minimal",
+  "generatedBy": "dsh-pack/0.1.0",
+  "units": [
+    {
+      "id": "io.github.dsh-unilock.skill",
+      "version": "1.0.0",
+      "digest": "7441b0f4329aaec93dcb7285e1678d5f0642cd1aa519abdc22c40ac9bfa554fe",
+      "unitDigest": "d3a5cc700dcd13d21c083eb3a6c010df8602acbc6c027dbd1e63ad3c29aba5bc"
+    },
+    {
+      "id": "io.github.dsh-unilock.tool",
+      "version": "1.0.0",
+      "digest": "b999cd7af25042827f1337cb97a21f5dd1009334e5b86587c28932842809e4b2",
+      "unitDigest": "3d9e443bf9677f3311e17b98dbbd31dbf8c065e8e7a81a9aac9adf6f02bd56cd"
+    }
+  ],
+  "patches": [
+    {
+      "id": "base",
+      "file": "patches/00-base.patch.yml",
+      "digest": "8bb80805c39af6dbe0b41507ceb88a2828fc0c7ec170e8ede371548cd3d28536"
+    },
+    {
+      "id": "skill",
+      "file": "patches/30-skill.patch.yml",
+      "digest": "0dfd023cd2f794797865c7d88553ca385f1da37c97e9c6e9a67e75d4171f5537"
+    },
+    {
+      "id": "tool",
+      "file": "patches/40-tool.patch.yml",
+      "digest": "36f53e1b593e6c1efa34dd066aebdd1033161d4a8cc2a73fd1240fb773fde160"
+    }
+  ],
+  "bindings": {},
+  "credentialBindings": {},
+  "digest": "2aa283ea8824fc08815504fd1411507d51a28d56d5f481a5bac14b1d6f591dc1"
+}

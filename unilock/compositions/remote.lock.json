@@ -1,0 +1,50 @@
+{
+  "format": 1,
+  "id": "io.github.dsh-unilock.remote",
+  "generatedBy": "dsh-pack/0.1.0",
+  "units": [
+    {
+      "id": "io.github.dsh-unilock.command",
+      "version": "1.0.0",
+      "digest": "e48c7f526bea3470fce7075fc4b338ac16d5ddee6302349e9cd4fb0c8ea3f687",
+      "unitDigest": "b778a6b2679933d244cd472bede2eeedb23b59100387d58b7b7a08214bdedb59"
+    },
+    {
+      "id": "io.github.dsh-unilock.cli",
+      "version": "1.0.0",
+      "digest": "fa3ca99438c1d0c13f9e53aaecd087eadb418259875cacc17c6a02ad73c59016",
+      "unitDigest": "1dfd16ee17e92d47fb84dffdd1576abbe14e18c4f388c6c2dfb8fc472a5fef68"
+    },
+    {
+      "id": "io.github.dsh-unilock.mcp",
+      "version": "1.0.0",
+      "digest": "e2d0c1011ce05df57bb7d887ceebdbe4ed5598ecd395727b6f07a04f7b517a11",
+      "unitDigest": "68080f671535a38401838554609caaf81c9b23033ea69c69a705f0a362e821c2"
+    }
+  ],
+  "patches": [
+    {
+      "id": "base",
+      "file": "patches/00-base.patch.yml",
+      "digest": "8bb80805c39af6dbe0b41507ceb88a2828fc0c7ec170e8ede371548cd3d28536"
+    },
+    {
+      "id": "command",
+      "file": "patches/10-command.patch.yml",
+      "digest": "49d7e3fef1d1cb1ed07f6ec2fe1f4ada900a74ea8c42101f98c45b3f70f3726c"
+    },
+    {
+      "id": "cli",
+      "file": "patches/20-cli.patch.yml",
+      "digest": "503ca7f657e880ab74aa8e18e64363b9db0f6741f45982896d375ff0af4a1200"
+    },
+    {
+      "id": "mcp",
+      "file": "patches/50-mcp.patch.yml",
+      "digest": "a6575454f5d736d41228c80f7d7d314aeb675a3ba3440fdfef8d40a40c0bdfad"
+    }
+  ],
+  "bindings": {},
+  "credentialBindings": {},
+  "digest": "8308be3e20c922060d0256cc58dcb074a4fcbdb202008d0225dbcafcf04b6509"
+}

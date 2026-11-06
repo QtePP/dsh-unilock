@@ -1,0 +1,42 @@
+{
+  "format": 1,
+  "id": "io.github.dsh-unilock.skill",
+  "name": "unilock skill",
+  "version": "1.0.0",
+  "description": "Ships one SKILL.md. Model-readable instructions only; no tool registration, no MCP config, no credentials.",
+  "roles": [
+    "skill"
+  ],
+  "provides": {
+    "capabilities": [
+      "unilock.skill"
+    ],
+    "services": [],
+    "tools": [],
+    "commands": []
+  },
+  "requires": {
+    "capabilities": [],
+    "credentials": [],
+    "constraints": {}
+  },
+  "contents": {
+    "sources": [
+      {
+        "kind": "directory",
+        "path": "skills",
+        "target": "skills",
+        "role": "skill"
+      }
+    ],
+    "skills": [
+      "unilock-guide"
+    ],
+    "commands": [],
+    "mcpServers": []
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "digest": "7441b0f4329aaec93dcb7285e1678d5f0642cd1aa519abdc22c40ac9bfa554fe"
+  }
+}

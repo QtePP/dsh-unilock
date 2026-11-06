@@ -1,0 +1,30 @@
+{
+  "format": 1,
+  "id": "com.example.search",
+  "name": "Web search provider",
+  "version": "1.0.0",
+  "description": "Ships the web-search skill and declares the credential name its MCP server needs.",
+  "roles": ["skill", "mcp"],
+  "provides": {
+    "capabilities": ["search.web"],
+    "services": [],
+    "tools": [],
+    "commands": []
+  },
+  "requires": {
+    "capabilities": [],
+    "credentials": [
+      { "name": "MCP_SEARCH_TOKEN", "description": "Token for the search MCP endpoint.", "optional": false }
+    ],
+    "constraints": {}
+  },
+  "contents": {
+    "sources": [
+      { "kind": "directory", "path": "skills", "target": "skills", "role": "skill" }
+    ],
+    "skills": ["web-search"],
+    "commands": [],
+    "mcpServers": []
+  },
+  "integrity": { "algorithm": "sha256", "digest": "COMPUTE_ME" }
+}

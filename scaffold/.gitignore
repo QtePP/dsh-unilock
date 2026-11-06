@@ -1,0 +1,7 @@
+# Local-only files. Credential VALUES never enter this repository.
+.env
+.env.*
+*.local.json
+*.secret
+node_modules/
+.DS_Store

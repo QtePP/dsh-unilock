@@ -1,0 +1,4 @@
+# Baseline rows for the team profile.
+# A patch layer is a YAML array of Cordis loader patches (id-targeted overrides,
+# disables, or inserts). Keep this file small: one concern per layer.
+[]

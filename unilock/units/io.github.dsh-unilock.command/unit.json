@@ -1,0 +1,44 @@
+{
+  "format": 1,
+  "id": "io.github.dsh-unilock.command",
+  "name": "unilock slash command",
+  "version": "1.0.0",
+  "description": "Registers one human slash command. Owns only the command plane; consumes no other unit.",
+  "roles": [
+    "command"
+  ],
+  "provides": {
+    "capabilities": [
+      "unilock.command"
+    ],
+    "services": [],
+    "tools": [],
+    "commands": [
+      "unilock"
+    ]
+  },
+  "requires": {
+    "capabilities": [],
+    "credentials": [],
+    "constraints": {}
+  },
+  "contents": {
+    "sources": [
+      {
+        "kind": "directory",
+        "path": "commands",
+        "target": "commands",
+        "role": "command"
+      }
+    ],
+    "skills": [],
+    "commands": [
+      "unilock"
+    ],
+    "mcpServers": []
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "digest": "e48c7f526bea3470fce7075fc4b338ac16d5ddee6302349e9cd4fb0c8ea3f687"
+  }
+}

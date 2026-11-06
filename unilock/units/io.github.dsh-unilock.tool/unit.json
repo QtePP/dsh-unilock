@@ -1,0 +1,42 @@
+{
+  "format": 1,
+  "id": "io.github.dsh-unilock.tool",
+  "name": "unilock tool",
+  "version": "1.0.0",
+  "description": "Ships one model-callable tool definition. Registers on ctx.tools only; holds no command, skill, CLI or MCP code.",
+  "roles": [
+    "tool"
+  ],
+  "provides": {
+    "capabilities": [
+      "unilock.tool"
+    ],
+    "services": [],
+    "tools": [
+      "unilock_echo"
+    ],
+    "commands": []
+  },
+  "requires": {
+    "capabilities": [],
+    "credentials": [],
+    "constraints": {}
+  },
+  "contents": {
+    "sources": [
+      {
+        "kind": "directory",
+        "path": "tools",
+        "target": "tools",
+        "role": "tool"
+      }
+    ],
+    "skills": [],
+    "commands": [],
+    "mcpServers": []
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "digest": "b999cd7af25042827f1337cb97a21f5dd1009334e5b86587c28932842809e4b2"
+  }
+}

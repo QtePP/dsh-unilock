@@ -1,0 +1,14 @@
+# unilock MCP server config template
+#
+# The token is a NAME here. Its value is supplied by the local environment and
+# never enters this repository. `doctor` checks only that the name is set.
+#
+# - id: mcp-unilock
+#   name: '@deepseek-ai/dsh-mcp-client'
+#   config:
+#     serverName: unilock
+#     transport: streamable-http
+#     url: https://mcp.example.internal/unilock
+#     headers:
+#       Authorization: !!js '`Bearer ${process.env.UNILOCK_MCP_TOKEN}`'
+[]

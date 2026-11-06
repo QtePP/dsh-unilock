@@ -1,0 +1,10 @@
+{
+  "name": "unilock_echo",
+  "description": "Return the supplied text unchanged. Use to verify that this tool unit is mounted in the current composition.",
+  "parameters": {
+    "type": "object",
+    "properties": { "text": { "type": "string", "description": "Text to return." } },
+    "required": ["text"],
+    "additionalProperties": false
+  }
+}
